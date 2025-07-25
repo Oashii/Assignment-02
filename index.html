@@ -16,7 +16,7 @@
       <nav class="flex justify-between items-center pt-2 mx-4 lg:mx-36">
         <div><img src="./assets/logo.png" alt="flower logo" /></div>
         <div>
-          <ul class="flex gap-12 pt-8">
+          <ul class="flex gap-12 pt-8 text-xl">
             <div class="hidden md:flex gap-12">
               <li class="font-bold">Home</li>
               <li class="text-[#8987A1]">Shop</li>
@@ -28,7 +28,7 @@
       </nav>
       <!-- banner part -->
       <section
-        class="flex flex-col-reverse md:flex-row justify-between items-center mt-60 gap-10"
+        class="flex flex-col-reverse md:flex-row justify-between items-center mt-32 lg:mt-60 gap-10"
       >
         <div class="mx-4 lg:mx-36">
           <h1 class="text-[40px] lg:text-[65px] font-bold leading-tight">
@@ -202,21 +202,25 @@
       </section>
 
       <!-- latest deals section -->
-      <section class="md:mx-4 lg:mx-36">
-        <h1 class="text-[65px] font-bold text-center mt-36 py-5">
+      <section class="mx-4 lg:mx-36">
+        <h1 class="text-5xl lg:text-[65px] font-bold text-center mt-36 py-5">
           <span class="text-[#E95A08]">Latest</span>
           <span class="inline lg:hidden">Deals</span>
           <span class="hidden lg:inline">D eals</span>
         </h1>
-        <p class="text-[22px] text-neutral-400 text-center mb-32">
+        <p
+          class="text-base lg:text-[22px] text-neutral-400 text-center mb-10 lg:mb-32"
+        >
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. <br class="hidden lg:inline" />
           From classic roses to exotic blooms, we offer a wide variety of fresh.
         </p>
-        <div class="flex mb-[120px]">
-          <div>
+
+        <div class="flex flex-col lg:flex-row gap-6 mb-14 lg:mb-[120px]">
+          <!-- Left Column -->
+          <div class="flex flex-col gap-6 lg:w-[367px]">
             <div
-              class="bg-[url('./assets/deal-bloom.png')] bg-no-repeat bg-center bg-cover w-[367px] h-[200px] flex items-center justify-center mb-[30px] rounded-2xl"
+              class="bg-[url('./assets/deal-bloom.png')] bg-no-repeat bg-center bg-cover h-[200px] flex items-center justify-center rounded-2xl"
             >
               <p class="text-white text-center text-xl font-bold">
                 60% Off | Bloom Plant <br /><span class="border-b-2"
@@ -225,7 +229,7 @@
               </p>
             </div>
             <div
-              class="bg-[url('./assets/deal-ana.png')] bg-no-repeat bg-center bg-cover w-[367px] h-[200px] flex items-center justify-center rounded-2xl"
+              class="bg-[url('./assets/deal-ana.png')] bg-no-repeat bg-center bg-cover h-[200px] flex items-center justify-center rounded-2xl"
             >
               <p class="text-white text-center text-xl font-bold">
                 30% Off | Ana Plant <br /><span class="border-b-2"
@@ -234,11 +238,13 @@
               </p>
             </div>
           </div>
+
+          <!-- Right Wide Image -->
           <div
-            class="bg-[url('./assets/deal-zabo.png')] bg-no-repeat bg-center bg-cover w-full flex items-center justify-center ml-[30px] rounded-3xl"
+            class="bg-[url('./assets/deal-zabo.png')] bg-no-repeat bg-center bg-cover h-[200px] w-full flex items-center justify-center rounded-3xl"
           >
-            <p class="text-white text-center text-[40px] font-bold">
-              25% Off | Zabo Plant <br /><span class="border-b-2"
+            <p class="text-white text-center text-xl font-bold">
+              30% Off | Zabo Plant <br /><span class="border-b-2"
                 >Shop Now</span
               >
             </p>
@@ -257,7 +263,7 @@
           <div class="mt-8 overflow-x-auto">
             <div class="flex w-max overflow-hidden">
               <input
-                class="bg-white text-neutral-400 px-5 py-4 w-[250px] md:w-[500px]"
+                class="bg-white text-neutral-400 px-5 py-4 w-[235px] md:w-[500px]"
                 type="text"
                 placeholder="Write email"
               />
