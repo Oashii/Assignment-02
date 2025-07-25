@@ -55,7 +55,7 @@
       <!-- our plants section -->
       <section class="mx-4 lg:mx-36">
         <div class="text-center mt-16 lg:mt-32 mb-12 max-w-3xl mx-auto px-2">
-          <h1 class="text-4xl md:text-[65px] font-bold">
+          <h1 class="text-4xl md:text-[65px] font-bold pb-5">
             <span class="text-[#E95A08]">Our</span> Plants
           </h1>
           <p class="text-base md:text-[22px] text-neutral-400">
@@ -217,37 +217,56 @@
         </p>
 
         <div class="flex flex-col lg:flex-row gap-6 mb-14 lg:mb-[120px]">
-          <!-- Left Column -->
-          <div class="flex flex-col gap-6 lg:w-[367px]">
-            <div
-              class="bg-[url('./assets/deal-bloom.png')] bg-no-repeat bg-center bg-cover h-[200px] flex items-center justify-center rounded-2xl"
-            >
-              <p class="text-white text-center text-xl font-bold">
-                60% Off | Bloom Plant <br /><span class="border-b-2"
-                  >Shop Now</span
-                >
-              </p>
+          <div class="flex flex-col gap-6 lg:w-[40%]">
+            <div class="relative h-[250px] rounded-2xl overflow-hidden">
+              <div
+                class="absolute inset-0 bg-[url('./assets/deal-bloom.png')] bg-no-repeat bg-center bg-cover z-0"
+              ></div>
+
+              <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+              <div
+                class="relative z-20 flex items-center justify-center h-full"
+              >
+                <p class="text-white text-center text-xl font-bold">
+                  60% Off | Bloom Plant <br /><span class="border-b-2"
+                    >Shop Now</span
+                  >
+                </p>
+              </div>
             </div>
-            <div
-              class="bg-[url('./assets/deal-ana.png')] bg-no-repeat bg-center bg-cover h-[200px] flex items-center justify-center rounded-2xl"
-            >
-              <p class="text-white text-center text-xl font-bold">
-                30% Off | Ana Plant <br /><span class="border-b-2"
-                  >Shop Now</span
-                >
-              </p>
+
+            <div class="relative h-[250px] rounded-2xl overflow-hidden">
+              <div
+                class="absolute inset-0 bg-[url('./assets/deal-ana.png')] bg-no-repeat bg-center bg-cover z-0"
+              ></div>
+              <div class="absolute inset-0 bg-black/40 z-10"></div>
+              <div
+                class="relative z-20 flex items-center justify-center h-full"
+              >
+                <p class="text-white text-center text-xl font-bold">
+                  30% Off | Ana Plant <br /><span class="border-b-2"
+                    >Shop Now</span
+                  >
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Right Wide Image -->
           <div
-            class="bg-[url('./assets/deal-zabo.png')] bg-no-repeat bg-center bg-cover h-[200px] w-full flex items-center justify-center rounded-3xl"
+            class="relative w-full h-[250px] lg:h-[524px] rounded-3xl overflow-hidden"
           >
-            <p class="text-white text-center text-xl font-bold">
-              30% Off | Zabo Plant <br /><span class="border-b-2"
-                >Shop Now</span
-              >
-            </p>
+            <div
+              class="absolute inset-0 bg-[url('./assets/deal-zabo.png')] bg-no-repeat bg-center bg-cover z-0"
+            ></div>
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <div class="relative z-20 flex items-center justify-center h-full">
+              <p class="text-white text-center text-xl lg:text-5xl font-bold">
+                30% Off | Zabo Plant <br /><span class="border-b-2"
+                  >Shop Now</span
+                >
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -263,7 +282,7 @@
           <div class="mt-8 overflow-x-auto">
             <div class="flex w-max overflow-hidden">
               <input
-                class="bg-white text-neutral-400 px-5 py-4 w-[235px] md:w-[500px]"
+                class="bg-white text-neutral-400 px-5 py-4 w-[250px] md:w-[500px]"
                 type="text"
                 placeholder="Write email"
               />
